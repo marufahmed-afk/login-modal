@@ -17,7 +17,11 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   background-color: $bg-color;
+  height: 100vh;
   color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -30,10 +34,18 @@ ul {
 }
 
 .container {
+  width: 100%;
 }
 
 .card {
-  background-color: $light-color;
-  padding: 20px 25px;
-  border-radius: 13px;
+  background-color: $secondary-color;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  
 }
