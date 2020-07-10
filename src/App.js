@@ -7,14 +7,14 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 // component imports
-import Login from './components/login/Login';
+import Home from './components/layout/Home';
 
 const App = () => {
     return (
         <Provider store={store}>
             <Fragment>
                 <Switch>
-                    <Route exact path="/" component={Login} />
+                    <Route exact path="/" component={Home} />
                 </Switch>
             </Fragment>
         </Provider>

@@ -5,11 +5,11 @@ import { toggleModal } from '../../actions/login';
 const LoginForm = ({ toggleModal }) => {
 
     const [formState, setFormState] = useState({
-        email: '',
+        username: '',
         password: ''
     });
 
-    const { email, password } = formState;
+    const { username, password } = formState;
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,18 +21,20 @@ const LoginForm = ({ toggleModal }) => {
     };
 
     return (
-        <div className="card">
-            <h3>Login</h3>
-            <a href="#" className="close" onClick={() => toggleModal()}></a>
-            <form className="login-form" onSubmit={handleSubmit}>
-                <label htmlFor="email">Email</label>
-                <input type="text" name="email" value={email} onChange={handleChange} />
+        <div className="backdrop">
+            <div className="card">
+                <h3>Login</h3>
+                <a className="close" onClick={() => toggleModal()}></a>
+                <form className="login-form" onSubmit={handleSubmit}>
+                    <label htmlFor="email">Username</label>
+                    <input type="text" name="username" value={username} onChange={handleChange} />
 
-                <label htmlFor="password">Password</label>
-                <input type="text" name="password" value={password} onChange={handleChange} />
+                    <label htmlFor="password">Password</label>
+                    <input type="text" name="password" value={password} onChange={handleChange} />
 
-                <button className="submit-btn btn" >Login</button>
-            </form>
+                    <button className="submit-btn btn" >Login</button>
+                </form>
+            </div>
         </div>
     );
 };
