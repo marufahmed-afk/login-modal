@@ -1,27 +1,31 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 //Color
 $bg-color: #200f21;
 $light-color: #5a3d5c;
-$primary-color: #f638dc;
+$primary-color: #7449db;
 $secondary-color: #382039;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
+  border: none;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: $bg-color;
   height: 100vh;
   color: #ffffff;
+  padding: 1rem 1rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 a {
@@ -33,19 +37,99 @@ ul {
   list-style: none;
 }
 
-.container {
-  width: 100%;
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.9rem;
+  font-size: 1.2rem;
 }
+
 
 .card {
   background-color: $secondary-color;
-  padding: 1rem 2rem;
+  padding: 1.5rem 1.7rem;
   border-radius: 1rem;
-  width: 100%;
+  width: 330px;
+
+
+  h3{
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    text-align: center;
+  }
 }
 
 .login-form {
   display: flex;
   flex-direction: column;
+
+
+  label {
+    font-size: 1rem;
+    padding-bottom: 7px;
+  }
+
+  input[type='text'] {
+    padding: 0.5rem 0.7rem;
+    border-radius: 0.3rem;
+    background-color: $bg-color;
+    color: white;
+  }
+
+  input[type='text'], [type='text'] {
+    margin-bottom: 0.8rem;
+  }
+
+  .submit-btn {
+    border-radius: 6px;
+    padding: 0.5rem 0.7rem;
+    border: none;
+    background-color: $primary-color;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    margin-top: 25px;
+  }
   
+}
+
+@media (min-width: 760px) {
+  .card {
+    width: 500px;
+    h3{
+      font-weight: 700;
+      font-size: 1.7rem;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+  }
+
+  
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+
+  label {
+    font-size: 1.2rem;
+    padding-bottom: 12px;
+  }
+
+  input[type='text'] {
+    padding: 0.7rem 0.9rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  input[type='text'], [type='text'] {
+    margin-bottom: 1rem;
+  }
+
+  .submit-btn {
+
+    margin-top: 30px;
+  }
+  
+}
+
 }

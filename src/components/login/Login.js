@@ -1,18 +1,16 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import LoginForm from './LoginForm';
 
 const Login = () => {
   return (
-    <div className="card container">
-      <form className="login-form">
-        <label htmlFor="email">Email</label>
-        <input type="text" name="email" />
+    <Fragment>
+      <button className="btn">
+        Open Form
+      </button>
+      {/* <LoginForm /> */}
+    </Fragment>
 
-        <label htmlFor="password">Password</label>
-        <input type="text" name="password" />
 
-        <button className="submit-btn">Submit</button>
-      </form>
-    </div>
   );
 };
 
