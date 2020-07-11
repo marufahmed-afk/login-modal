@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+
 
 // component imports
 import Login from '../login/Login';
@@ -8,10 +9,10 @@ import ThemeSwitch from './ThemeSwitch';
 const Home = () => {
 
     return (
-        <Fragment>
+        <div>
             <ThemeSwitch />
             <Login />
-        </Fragment>
+        </div>
     );
 };
 
