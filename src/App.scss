@@ -155,10 +155,6 @@ ul {
 
 }
 
-
-
-
-
 #root {
   width: 100%;
   height: 100%;
@@ -179,7 +175,6 @@ ul {
   border-radius: 1rem;
   width: 330px; 
   z-index: 20;
-  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
   
   position: fixed;
   top:50%;
@@ -266,6 +261,7 @@ ul {
     padding: 0.7rem 0.9rem;
     border-radius: 0.5rem;
     margin-top: 35px;
+    font-size: 1.2rem;
   }
   
 }
