@@ -1,23 +1,37 @@
 import React, { Fragment } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import './App.scss';
+import { GlobalStyles } from './components/theme/Globalstyles';
+
 
 // Redux
 import { Provider } from 'react-redux';
 import store from './store';
 
+// Context
+import ThemeState from './context/theme/ThemeState';
+
 // component imports
 import Home from './components/layout/Home';
 
 const App = () => {
+
     return (
-        <Provider store={store}>
+        <ThemeState>
             <Fragment>
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                </Switch>
+                <GlobalStyles />
+                <Provider store={store}>
+                    <Router>
+                        <Fragment>
+                            <Switch>
+                                <Route exact path="/" component={Home} />
+                            </Switch>
+                        </Fragment>
+                    </Router>
+                </Provider>
             </Fragment>
-        </Provider>
+        </ThemeState>
     );
 };
 

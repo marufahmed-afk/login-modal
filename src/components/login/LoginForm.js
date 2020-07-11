@@ -21,7 +21,7 @@ const LoginForm = ({ toggleModal }) => {
     };
 
     return (
-        <div className="backdrop">
+        <div className="backdrop" onClick={handleSubmit}>
             <div className="card">
                 <h3>Login</h3>
                 <a className="close" onClick={() => toggleModal()}></a>
