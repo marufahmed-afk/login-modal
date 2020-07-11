@@ -170,6 +170,7 @@ ul {
   height: 100%;
   padding: 0;
   background: rgba(0,0,0,.5);
+  z-index: 5;
 }
 
 .card {
@@ -177,7 +178,7 @@ ul {
   padding: 1.5rem 1.7rem;
   border-radius: 1rem;
   width: 330px; 
-  z-index: 2;
+  z-index: 20;
   
   position: fixed;
   top:50%;

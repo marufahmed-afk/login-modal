@@ -7,7 +7,12 @@ const Login = ({ login: { openModal }, toggleModal }) => {
 
   return (
     <Fragment>
-      {openModal && <LoginForm />}
+
+      {openModal && (
+        <div className="backdrop">
+          <LoginForm />
+        </div>)}
+
       <button className="btn open-btn" onClick={() => toggleModal()}>
         Open Form
       </button>
