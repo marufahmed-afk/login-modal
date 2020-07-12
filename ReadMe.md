@@ -1,6 +1,6 @@
 ### React Login Modal
 
-A react login form modal with a minimal design also including Dark/Light mode theme toggle. built using `webpack`, served by
+A react login form modal with a minimal design, completely responsive also including Dark/Light mode theme toggle. built using `webpack`, served by
 `webpack-dev-server`.
 
 - Context Api was used for making the app themeable
