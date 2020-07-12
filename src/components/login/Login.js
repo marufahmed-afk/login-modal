@@ -3,6 +3,7 @@ import LoginForm from './LoginForm';
 import { connect } from 'react-redux';
 import { toggleModal } from '../../actions/login';
 import { motion, AnimatePresence } from 'framer-motion';
+import PropTypes from 'prop-types';
 
 const Login = ({ login: { openModal }, toggleModal }) => {
 
@@ -29,6 +30,11 @@ const Login = ({ login: { openModal }, toggleModal }) => {
       </motion.button>
     </Fragment>
   );
+};
+
+Login.prototypes = {
+  login: PropTypes.object.isRequired,
+  toggleModal: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = (state) => ({

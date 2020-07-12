@@ -23,7 +23,7 @@ const ThemeSwitch = () => {
             animate={{ y: 0 }}
             transition={{ delay: 0.2, type: 'spring', stiffness: 80 }}
         >
-            <p>{isDark ? 'Dark Mode' : 'Light Mode'}</p>
+            <p className="mode">{isDark ? 'Dark Mode' : 'Light Mode'}</p>
             <label className="switch">
                 <input type="checkbox" checked={isDark} onClick={handleChange} />
                 <span className="slider round"></span>

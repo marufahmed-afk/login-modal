@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { toggleModal } from '../../actions/login';
+import PropTypes from 'prop-types';
 
 const LoginForm = ({ toggleModal }) => {
 
@@ -53,6 +54,10 @@ const LoginForm = ({ toggleModal }) => {
             </form>
         </div>
     );
+};
+
+LoginForm.prototypes = {
+    toggleModal: PropTypes.func.isRequired,
 };
 
 export default connect(null, { toggleModal })(LoginForm);

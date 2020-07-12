@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import './App.scss';
+
 import { GlobalStyles } from './components/theme/Globalstyles';
 
 
@@ -23,11 +23,11 @@ const App = () => {
                 <GlobalStyles />
                 <Provider store={store}>
                     <Router>
-                        <Fragment>
+                        <div className="app">
                             <Switch>
                                 <Route exact path="/" component={Home} />
                             </Switch>
-                        </Fragment>
+                        </div>
                     </Router>
                 </Provider>
             </Fragment>
