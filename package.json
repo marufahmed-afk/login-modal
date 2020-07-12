@@ -30,7 +30,7 @@
     "axios": "^0.18.0",
     "bootstrap": "^4.0.0",
     "framer-motion": "^1.11.1",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.5",
     "popper.js": "^1.14.3",
     "react": "^16.13.1",
