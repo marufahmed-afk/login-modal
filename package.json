@@ -31,7 +31,7 @@
     "bootstrap": "^4.0.0",
     "framer-motion": "^1.11.1",
     "jquery": "^3.3.1",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.21",
     "popper.js": "^1.14.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
